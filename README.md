@@ -12,7 +12,7 @@ Copyright (C) Regents of the University of California, 2017
 
 
 
-This is a set of scripts written in Python 2.7 and tested in Ubuntu 16.04 that allows a Rainforrest Automation Raven and EMU-2 smart meter HAN interface devices.
+This is a set of multi-threaded logging scripts written in Python 2.7 and tested in Ubuntu 16.04 that allows a Rainforrest Automation Raven and EMU-2 smart meter HAN interface devices.
 
 The code as written provides 3 functions:
 
@@ -31,5 +31,5 @@ For the SQL logging capability, a pre-made SQL database with a pair of tables na
 2) The "run_info" table has columns for "name (run name which matches the data in "instantaneous_demand" table), hash, meter_id, time.
 
 
-WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from the meter, extended runs of these scripts can lead to large database sizes.  If this script is run on a low power device, performance can degrade with time unless there is another script or operation that is used to purge or archive historic entries.  You are warned!
+WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from the meter, extended runs of these scripts can lead to large database sizes.  If this script is run on a low power device, performance can degrade with time unless there is another script or operation that is used to purge or archive historic entries.  You are warned!  Occasionally a parsing error will show up for the first read, ignore this.  Reading will be OK after this first issue.  
 
