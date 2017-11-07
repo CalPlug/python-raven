@@ -1,0 +1,159 @@
+Script (1) Operation 
+
+michael@michael-laptop:~/Desktop/ec-data$ sudo python3 run.py
+[sudo] password for michael: 
+What would you like to title this run? test2
+
+Press enter to begin run.
+3...
+2...
+1...
+Traceback (most recent call last):
+  File "run.py", line 65, in <module>
+    a.run()
+  File "run.py", line 29, in run
+    self._begin()
+  File "run.py", line 26, in _begin
+    self.__db.insertRunInfo([self.__hash,self.__run])
+  File "/home/michael/Desktop/ec-data/MySQLHelper.py", line 100, in insertRunInfo
+    connection = MySQLdb.connect(host=SERVER, user=USER, passwd=PASSWD, db=DB)
+  File "/home/michael/.local/lib/python3.5/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/michael/.local/lib/python3.5/site-packages/MySQLdb/connections.py", line 191, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+
+Press enter to begin run.
+3...
+2...
+1...
+(<class 'Raven.InvalidFormat'>, InvalidFormat("INVALID CHAR: b''",), <traceback object at 0xb6dd234c>)
+<InstantaneousDemand>
+(936, 1, 1000, 'test3', 'ebd766c9-d781-409e-b6fa-947fe96ed3de')
+
+What would you like to title this run? test3
+Press enter to begin run.
+3...
+2...
+1...
+(<class 'Raven.InvalidFormat'>, InvalidFormat("INVALID CHAR: b''",), <traceback object at 0xb6d4e324>)
+<InstantaneousDemand>
+(896, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
+<InstantaneousDemand>
+(895, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
+
+
+(546, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
+<InstantaneousDemand>
+(546, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
+<InstantaneousDemand>
+(546, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
+<InstantaneousDemand>
+(546, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
+<InstantaneousDemand>
+(545, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
+<InstantaneousDemand>
+(550, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
+(<class 'termios.error'>, error(5, 'Input/output error'), <traceback object at 0xb668b9dc>)
+(<class 'serial.serialutil.SerialException'>, SerialException('read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)',), <traceback object at 0xb6696cac>)
+in middle of run:  
+(664, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<InstantaneousDemand>
+(661, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<InstantaneousDemand>
+(711, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<InstantaneousDemand>
+(721, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<InstantaneousDemand>
+(694, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<InstantaneousDemand>
+(696, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<InstantaneousDemand>
+(713, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<InstantaneousDemand>
+(694, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<InstantaneousDemand>
+(693, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<InstantaneousDemand>
+(693, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<TimeCluster>
+(-1, -1, -1, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+<InstantaneousDemand>
+(694, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
+^C(<class 'KeyboardInterrupt'>, KeyboardInterrupt(), <traceback object at 0xb668e7d4>)
+[Keyboard initiated stop condition to terminate the script]
+
+
+michael@michael-laptop:~/Desktop/ec-data$ sudo python3 run.py
+[sudo] password for michael: 
+What would you like to title this run? test2
+Press enter to begin run.
+3...
+2...
+1...
+(<class 'Raven.InvalidFormat'>, InvalidFormat("INVALID CHAR: b''",), <traceback object at 0xb6db9374>)
+<InstantaneousDemand>
+(4602, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+
+
+
+
+
+<InstantaneousDemand>
+(3975, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(3972, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(3979, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(4010, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(3993, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(3980, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(3986, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(3980, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<CurrentSummationDelivered>
+(-1, -1, -1, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(4005, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(3991, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(3990, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(4462, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+<InstantaneousDemand>
+(4280, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
+Traceback (most recent call last):
+  File "run.py", line 49, in run
+    self.__db.insertDemandData(data)
+  File "/home/michael/Desktop/ec-data/MySQLHelper.py", line 127, in insertDemandData
+    connection = MySQLdb.connect(host=SERVER, user=USER, passwd=PASSWD, db=DB)
+  File "/home/michael/.local/lib/python3.5/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/michael/.local/lib/python3.5/site-packages/MySQLdb/connections.py", line 191, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "run.py", line 65, in <module>
+    a.run()
+  File "run.py", line 54, in run
+    self.__db.insertDemandData(data)
+  File "/home/michael/Desktop/ec-data/MySQLHelper.py", line 127, in insertDemandData
+    connection = MySQLdb.connect(host=SERVER, user=USER, passwd=PASSWD, db=DB)
+  File "/home/michael/.local/lib/python3.5/site-packages/MySQLdb/__init__.py", line 81, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/michael/.local/lib/python3.5/site-packages/MySQLdb/connections.py", line 191, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+_mysql_exceptions.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
+michael@michael-laptop:~/Desktop/ec-data$ 
+
+
+
+
