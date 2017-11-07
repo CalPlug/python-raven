@@ -10,7 +10,7 @@ University of California, Irvine
 
 CalPlug acknowledges the support of Southern California Edison for the development of this work as part of the "EnergyChannel" project.
 
-2017
+Copyright (C) Regents of the University of California, 2017
 
 
 
