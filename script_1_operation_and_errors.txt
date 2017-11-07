@@ -1,5 +1,7 @@
 Script (1) Operation 
+this file details general operation of the mySQL logger script (#1) and some basic operational errorts a user may encounter.
 
+[Normal Operation]
 michael@michael-laptop:~/Desktop/ec-data$ sudo python3 run.py
 [sudo] password for michael: 
 What would you like to title this run? test2
@@ -23,6 +25,13 @@ Traceback (most recent call last):
     super(Connection, self).__init__(*args, **kwargs2)
 _mysql_exceptions.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
 
+[This is caused by the MySQL database not being operational at the time the script is executed]
+
+
+michael@michael-laptop:~/Desktop/ec-data$ sudo python3 run.py
+[sudo] password for michael: 
+What would you like to title this run? test2
+
 Press enter to begin run.
 3...
 2...
@@ -41,8 +50,7 @@ Press enter to begin run.
 (896, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
 <InstantaneousDemand>
 (895, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
-
-
+<InstantaneousDemand>
 (546, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
 <InstantaneousDemand>
 (546, 1, 1000, 'test3', '628d587a-4ecc-4b1b-9cae-094ae4441a7f')
@@ -81,7 +89,9 @@ in middle of run:
 <InstantaneousDemand>
 (694, 1, 1000, 'test3', '3fb16bd3-1ae9-4375-8368-908c128695bd')
 ^C(<class 'KeyboardInterrupt'>, KeyboardInterrupt(), <traceback object at 0xb668e7d4>)
+
 [Keyboard initiated stop condition to terminate the script]
+[Operation with occasional parsing errors.  The script has been updated to output a "-1" value when a parsing error is caught]
 
 
 michael@michael-laptop:~/Desktop/ec-data$ sudo python3 run.py
@@ -94,11 +104,6 @@ Press enter to begin run.
 (<class 'Raven.InvalidFormat'>, InvalidFormat("INVALID CHAR: b''",), <traceback object at 0xb6db9374>)
 <InstantaneousDemand>
 (4602, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
-
-
-
-
-
 <InstantaneousDemand>
 (3975, 1, 1000, 'test2', 'cb733ec0-b9b0-42ed-9f19-ba3d402544bd')
 <InstantaneousDemand>
@@ -152,7 +157,9 @@ Traceback (most recent call last):
   File "/home/michael/.local/lib/python3.5/site-packages/MySQLdb/connections.py", line 191, in __init__
     super(Connection, self).__init__(*args, **kwargs2)
 _mysql_exceptions.OperationalError: (2002, "Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)")
-michael@michael-laptop:~/Desktop/ec-data$ 
+
+[Example of a database communication failure in mid-operation of the script due to a scheduled update]
+
 
 
 
