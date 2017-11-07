@@ -1,5 +1,7 @@
 # python-raven
 
+Logging and Reportuing Ultilities for Rainforest Automation's Raven and EMU-2 Smart Meter Energy Monitors
+
 Coding Development by: Hamed Ghafarshad and Viet Than Ly
 
 Managed by: Dr. Michael Klopfer, Dr. Sergio Gago, Prof. G.P. Li
@@ -10,9 +12,11 @@ CalPlug acknowledges the support of Southern California Edison for the developme
 
 Copyright (C) Regents of the University of California, 2017
 
+***************************************************************************************************
+***************************************************************************************************
 
 
-This is a set of multi-threaded logging scripts written in Python 2.7 and tested in Ubuntu 16.04 that allows a Rainforrest Automation Raven and EMU-2 smart meter HAN interface devices.
+This is a set of multi-threaded logging scripts written in Python 2.7 and tested in Ubuntu 16.04 that allows a Rainforest Automation Raven and EMU-2 smart meter HAN interface devices using their XML API (https://rainforestautomation.com/wp-content/uploads/2014/02/raven_xml_api_r127.pdf).
 
 The code as written provides 3 functions:
 
