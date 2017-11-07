@@ -18,7 +18,7 @@ Copyright (c) Regents of the University of California, 2017
 
 This is a set of multi-threaded logging scripts written in Python 2.7 and tested in Ubuntu 16.04 that allows a Rainforest Automation Raven and EMU-2 smart meter HAN interface devices using their XML API (https://rainforestautomation.com/wp-content/uploads/2014/02/raven_xml_api_r127.pdf).
 
-The code as written provides 3 functions:
+The reporter code as written provides 3 functions (available in the reporter directory):
 
 1) Meter to SQL - the meter data will be stored locally in a mySQL database (tested with MySQL 5.5)
 
@@ -26,7 +26,7 @@ The code as written provides 3 functions:
 
 3) Meter to MQTT - direct reporting of reported values to an MQTT broker.
 
-Included is a script that reads from a broker and if an updated entry is passed to the broker, these are read, parsed, and inserted in a Mongo DB database.
+Included is a script that reads from a broker and if an updated entry is passed to the broker, these are read, parsed, and inserted in a Mongo DB database (in the recorder directory).
 
 For the SQL logging capability, a pre-made SQL database with a pair of tables named "instantaneous_demand" and "run_info" is required.  The structure of the tables is as follows:
 
