@@ -24,7 +24,7 @@ The reporter code as written provides 3 functions (available in the reporter dir
 
 2) Meter to SQL then SQL to MQTT - the use of an addon script provides repeating of the local database to and MQTT broker 
 
-3) Meter to MQTT - direct reporting of reported values to an MQTT broker.  This effort is similar to https://github.com/stormboy/node-raven
+3) Meter to MQTT - direct reporting of reported values to an MQTT broker.  This effort is similar to https://github.com/stormboy/node-raven but in Python versus node.
 
 Included is a script that reads from a broker and if an updated entry is passed to the broker, these are read, parsed, and inserted in a Mongo DB database (in the recorder directory).
 
