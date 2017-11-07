@@ -4,9 +4,7 @@ Coding Development by: Hamed Ghafarshad and Viet Than Ly
 
 Managed by: Dr. Michael Klopfer, Dr. Sergio Gago, Prof. G.P. Li
 
-California Plug Load Research Center (CalPlug)
-
-University of California, Irvine
+California Plug Load Research Center (CalPlug), California Institute of Telecommunications and Information Technology (Calit2), University of California, Irvine
 
 CalPlug acknowledges the support of Southern California Edison for the development of this work as part of the "EnergyChannel" project.
 
