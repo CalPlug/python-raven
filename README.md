@@ -10,7 +10,7 @@ California Plug Load Research Center (CalPlug), California Institute of Telecomm
 
 CalPlug acknowledges the support of Southern California Edison for the development of this work as part of the "EnergyChannel" project.
 
-Copyright (C) Regents of the University of California, 2017
+Copyright (c) Regents of the University of California, 2017
 
 ***************************************************************************************************
 ***************************************************************************************************
