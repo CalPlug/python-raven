@@ -1,0 +1,35 @@
+Mqtt Topic: test_device/readings 
+
+Starting Server
+
+1. ssh calplug@cpmqtt1.calit2.uci.edu
+2. cd smartmeter
+3. run serverMqtt.py (command is sudo python3 serverMqtt.py)
+4. Successful connection with cloudMqtt broker should result in 
+   output of "Connected with result code 0"
+5. Ctrl-Z to exit
+
+
+Starting logger
+
+1. cd Desktop/ec-data
+2. run loggerMqtt.py
+3. Successful connection with cloudMqtt broker should result in output of
+   "Connected with result code 0"
+4. Press enter to exit(pressing other keys may cause undefined behavior) 
+
+Starting direct_mqtt_run
+
+1. cd Desktop/direcy_mqtt_run
+2. run loggerMqtt.py
+3. Successful connection with cloudMqtt broker should result in output of
+   "Connected with result code 0"
+4. Press enter to exit(pressing other keys may cause undefined behavior) 
+Checking if data was successfully sent and stored in MongoDB
+
+1. ssh calgplug@cpmqtt1.calit2.uci.edu
+2. run mongo shell in terminal 
+3. use pulses
+4. db.InstantaneousDemandTest.find() to check if data was succesfully stored in collection by checking if utcTime attribute corresponds to when you sent data 
+
+
