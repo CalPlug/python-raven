@@ -16,7 +16,7 @@ Copyright (c) Regents of the University of California, 2017
 ***************************************************************************************************
 
 
-This is a set of multi-threaded logging scripts written in Python 2.7 and tested in Ubuntu 16.04 that allows a Rainforest Automation Raven and EMU-2 smart meter HAN interface devices using their XML API (https://rainforestautomation.com/wp-content/uploads/2014/02/raven_xml_api_r127.pdf).
+This is a set of multi-threaded logging scripts written in Python 3 and tested in Ubuntu 16.04 that allows a Rainforest Automation Raven and EMU-2 smart meter HAN interface devices using their XML API (https://rainforestautomation.com/wp-content/uploads/2014/02/raven_xml_api_r127.pdf).
 
 The reporter code as written provides 3 functions (available in the reporter directory):
 
