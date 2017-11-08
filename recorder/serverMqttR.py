@@ -56,8 +56,8 @@ if __name__ =='__main__':
 	mqttc.on_message = on_message
 	mqttc.on_connect = on_connect
 
-	user = 'dkpljrty'
-	password = 'ZJDsxMVKRjoR'
+	user = 'xxxxxxxxxxxx'
+	password = 'xxxxxxxxxxxxxxxxxxx'
 	port = 17934
 	broker_address = 'm10.cloudmqtt.com'
 
