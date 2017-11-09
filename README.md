@@ -50,7 +50,7 @@ WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from th
 
 # Meter to SQL to MQTT Add-on (serverMqtt.py loggerMqtt.py)
 
-1) To start the server, log on to the Calit2 mqtt. Credentials:
+1) To start the server to collect data from the MQTT broker to MongoDB, log on to the Calit2 MQTT server. Credentials:
 	Server Name: calplug@cpmqtt1.calit2.uci.edu
 	Password: Calplug2016
 2) Open the smartmeter directory
@@ -61,4 +61,8 @@ WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from th
 6) Open another terminal
 7) Execute the loggerMqtt.py script inside of the python-raven directory
 8) On a successful connection it will display "Connected with result 0"
+9) Data that are successfully pushed to MQTT will display on the terminal running loggerMqtt.py
+10) Data that is pushed to MongoDB will display on the terminal runnning serverMqtt.py
+11) Press "Enter" to exit the loggerMqtt.py script and Ctrl-Z to exit the serverMqtt.py script.
+
 
