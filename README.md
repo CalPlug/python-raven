@@ -46,9 +46,9 @@ WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from th
 5) The script will begin sending data to SQL after a 3 2 1 countdown.
 6) In the case that the Raven / Rainforest Automation unit is not found, the terminal will display "searching..." repeatedly
 7) If it is found successfully, then the rows of data read from the unit and added to the SQL database will display on the screen sequentally.
-8) Ctrl-Z will stop the script
+8) Press Ctrl-Z to suspend the script
 
-# Meter to SQL to MQTT Add-on (serverMqtt.py loggerMqtt.py)
+# Meter to SQL to MQTT Add-on (run.py serverMqtt.py loggerMqtt.py)
 
 1) To start the server to collect data from the MQTT broker to MongoDB, log on to the Calit2 MQTT server. Credentials:
 	Server Name: calplug@cpmqtt1.calit2.uci.edu
@@ -56,13 +56,29 @@ WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from th
 2) Open the smartmeter directory
 3) Run the server script with the following command:
 	sudo python3 serverMqtt.py
-4) On a successful connection it will display "Connected with result 0"
+4) On a successful connection to the MQTT broker, the terminal will display "Connected with result 0"
 5) In a seperate terminal execute the run.py script explained under Meter to SQL script instructions
 6) Open another terminal
-7) Execute the loggerMqtt.py script inside of the python-raven directory
-8) On a successful connection it will display "Connected with result 0"
-9) Data that are successfully pushed to MQTT will display on the terminal running loggerMqtt.py
-10) Data that is pushed to MongoDB will display on the terminal runnning serverMqtt.py
-11) Press "Enter" to exit the loggerMqtt.py script and Ctrl-Z to exit the serverMqtt.py script.
+7) Open python-raven/reporter directory
+8) Run the loggerMqtt.py script with the following command : sudo python3 loggerMqtt.py
+9) On a successful connection to the MQTT broker, the terminal will display "Connected with result 0"
+10) Data that are successfully pushed to MQTT will display on the terminal running loggerMqtt.py
+11) Data that is pushed to MongoDB will display on the terminal running serverMqtt.py
+12) Press "Enter" to exit the loggerMqtt.py script and Ctrl-Z to suspend the serverMqtt.py script.
 
+# Meter to MQTT (direct_mqtt_run.py serverMqttR.py)
 
+1) To start the server to collect data from the MQTT broker to MongoDB, log on to the Calit2 MQTT server. Credentials:
+	Server Name: calplug@cpmqtt1.calit2.uci.edu
+	Password: Calplug2016
+2) Open the smartmeter directory
+3) Run the server script with the following command:
+	sudo python3 serverMqttR.py
+4) On a successful connection to the MQTT broker, the terminal will display "Connected with result 0"
+5) Open a seperate terminal
+6) Open the python-raven/recorder directory 
+7) Run the direct_mqtt_run.py script with the following command:
+	sudo python3 direct_mqtt_run.py
+8) On a successful connection to the MQTT broker, the terminal will display "Connected with result 0"
+9) Rows of data that are sent from the broker should begin displaying on the terminal.
+10) Press Ctrl-Z to suspend the scripts
