@@ -39,7 +39,7 @@ WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from th
 
 # Meter to SQL script (run.py)
 
-1) Make sure the Raven stick or Rainforest Automation unit is on and attached to your laptop's USB port
+1) Make sure the Raven stick or Rainforest Automation unit is on and attached to a USB port
 1) Open the reporter directory inside of python-raven
 2) Run the the "run.py" script with the following command : sudo python3 run.py
 3) A query prompt will ask you to type in the appropriate name of the run
