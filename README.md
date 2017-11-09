@@ -37,3 +37,14 @@ For the SQL logging capability, a pre-made SQL database with a pair of tables na
 
 WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from the meter, extended runs of these scripts can lead to large database sizes.  If this script is run on a low power device, performance can degrade with time unless there is another script or operation that is used to purge or archive historic entries.  You are warned!  Occasionally a parsing error will show up for the first read, ignore this.  Reading will be OK after this first issue.  
 
+# Meter to SQL script (run.py)
+
+1) Make sure the Raven stick or Rainforest Automation unit is on and attached to your laptop's USB port
+1) Open the reporter directory inside of python-raven
+2) Run the the "run.py" script with the following command : sudo python3 run.py
+3) A query prompt will ask you to type in the appropriate name of the run
+4) The script will begin sending data to SQL after a 3 2 1 countdown.
+5) In the case that the Raven / Rainforest Automation unit is not found, the terminal will display "searching..." repeatedly
+6) If it is found successfully, then the rows of data read from the unit and added to the SQL database will display on the screen sequentally.
+7) Ctrl-Z will stop the script
+
