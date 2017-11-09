@@ -40,11 +40,25 @@ WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from th
 # Meter to SQL script (run.py)
 
 1) Make sure the Raven stick or Rainforest Automation unit is on and attached to a USB port
-1) Open the reporter directory inside of python-raven
-2) Run the the "run.py" script with the following command : sudo python3 run.py
-3) A query prompt will ask you to type in the appropriate name of the run
-4) The script will begin sending data to SQL after a 3 2 1 countdown.
-5) In the case that the Raven / Rainforest Automation unit is not found, the terminal will display "searching..." repeatedly
-6) If it is found successfully, then the rows of data read from the unit and added to the SQL database will display on the screen sequentally.
-7) Ctrl-Z will stop the script
+2) Open the reporter directory inside of python-raven
+3) Run the the "run.py" script with the following command : sudo python3 run.py
+4) A query prompt will ask you to type in the appropriate name of the run
+5) The script will begin sending data to SQL after a 3 2 1 countdown.
+6) In the case that the Raven / Rainforest Automation unit is not found, the terminal will display "searching..." repeatedly
+7) If it is found successfully, then the rows of data read from the unit and added to the SQL database will display on the screen sequentally.
+8) Ctrl-Z will stop the script
+
+# Meter to SQL to MQTT Add-on (serverMqtt.py loggerMqtt.py)
+
+1) To start the server, log on to the Calit2 mqtt. Credentials:
+	Server Name: calplug@cpmqtt1.calit2.uci.edu
+	Password: Calplug2016
+2) Open the smartmeter directory
+3) Run the server script with the following command:
+	sudo python3 serverMqtt.py
+4) On a successful connection it will display "Connected with result 0"
+5) In a seperate terminal execute the run.py script explained under Meter to SQL script instructions
+6) Open another terminal
+7) Execute the loggerMqtt.py script inside of the python-raven directory
+8) On a successful connection it will display "Connected with result 0"
 
