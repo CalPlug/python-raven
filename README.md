@@ -42,7 +42,7 @@ WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from th
 1) Log into the Calit2 MQTT server(cpmqtt1) using the following credentials:
 2) Open the mongo shell
 3) Enter command "use pulses"
-4) Enter "db.InstantaneousDemandTest.find()" to see all records.
+4) Enter "db.InstantaneousDemandTest.find()" to see all records posted from the Meter to SQL to MQTT add-on. Enter "db.InstantaneousDemandTest1.find()" to see all records posted from the direct Meter to MQTT script.
 5) Refer to MongoDB documentation for a list of commands to access specific records
 
 # Meter to SQL script (run.py)
@@ -72,6 +72,8 @@ WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from th
 
 # Meter to MQTT (direct_mqtt_run.py serverMqttR.py)
 
+Note: This script posts instantaneous demand, current summation delivered and current summation recieved along with a meter Mac ID to a MongoDB table named "InstantaneousDemandTest1". 
+
 1) To start the server to collect data from the MQTT broker to MongoDB, log on to the Calit2 MQTT server(cpmqtt1). 
 2) Open the smartmeter directory
 3) Run the server script with the following command:
@@ -83,3 +85,4 @@ WARNING:  As the SQL logging scripts can read a point every 5-10 seconds from th
 	sudo python3 direct_mqtt_run.py
 8) On a successful connection to the MQTT broker, the terminal will display "Connected with result 0"
 9) Rows of data that are sent from the broker should begin displaying on the terminal.
+
