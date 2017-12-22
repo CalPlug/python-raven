@@ -1,6 +1,6 @@
 # python-raven
 
-Logging and Reportuing Ultilities for Rainforest Automation's Raven and EMU-2 Smart Meter Energy Monitors
+Logging and Reporting Utilities for Rainforest Automation's Raven and EMU-2 Smart Meter Energy Monitors
 
 Coding Development by: Hamed Ghafarshad and Viet Than Ly
 
