@@ -2,24 +2,31 @@ from pymongo import MongoClient
 import paho.mqtt.client as mqtt
 import re
 import datetime
+import os
+import sys
 
 prev_demand_msg = ''
-
+connected_with_result_code_one = 0
 #Improve readability of time
 
 def parse_msg(msg) -> tuple:
 	msg = msg.strip('()')
 	msg = msg.strip(' ')
 	result = msg.split(',')
-	#print('Result = ' + str(result))
+#	print('Result = ' + str(result))
 	cleanResult = []
 	for i in result:
 		cleanResult.append((i.replace("'", "")).strip(' '))
-	#print(cleanResult)
+	print(cleanResult)
 	return tuple(cleanResult)
 
 def on_connect(client, userdata, flags, rc):
+	global connected_with_result_code_one
 	print("Connected with result code " + str(rc))
+	connected_with_result_code_one += 1
+	if connected_with_result_code_one > 1:
+		print("Disconnected -> restarting server...")
+		os.execl(sys.executable, 'python', __file__, *sys.argv[1:])
 
 def on_message(client, userdata, msg):
 
