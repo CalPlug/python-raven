@@ -9,7 +9,7 @@ prev_demand_msg = ''
 connected_with_result_code_one = 0
 #Improve readability of time
 
-def parse_msg(msg) -> tuple:
+def parse_msg(msg):
 	msg = msg.strip('()')
 	msg = msg.strip(' ')
 	result = msg.split(',')
