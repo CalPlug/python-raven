@@ -2,7 +2,8 @@
 
 Logging and Reporting Utilities for Rainforest Automation's Raven and EMU-2 Smart Meter Energy Monitors
 
-Coding Development by: Hamed Ghafarshad and Viet Than Ly
+Initial Coding Development by: Hamed Ghafarshad and Viet Than Ly  
+Development Extended by: Yutien Ren
 
 Managed by: Dr. Michael Klopfer, Dr. Sergio Gago, Prof. G.P. Li
 
@@ -10,7 +11,7 @@ California Plug Load Research Center (CalPlug), California Institute of Telecomm
 
 CalPlug acknowledges the support of Southern California Edison for the development of this work as part of the "EnergyChannel" project.
 
-Copyright (c) Regents of the University of California, 2017
+Copyright (c) Regents of the University of California, 2018
 
 ***************************************************************************************************
 ***************************************************************************************************
