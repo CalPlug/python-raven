@@ -4,7 +4,10 @@ import re
 import datetime
 import os
 import sys
+import configparser
 
+config = configparser.ConfigParser()
+config.read('vars.ini')
 prev_demand_msg = ''
 connected_with_result_code_one = 0
 #Improve readability of time
@@ -64,13 +67,13 @@ if __name__ =='__main__':
 	mqttc.on_message = on_message
 	mqttc.on_connect = on_connect
 
-	user = 'dkpljrty'
-	password = 'ZJDsxMVKRjoR'
-	port = 17934
-	broker_address = 'm10.cloudmqtt.com'
+	user = config['DEFAULT']['cloudmqtt_user']
+	password = config['DEFAULT']['cloudmqtt_pass']
+	port = config['DEFAULT']['cloudmqtt_port']
+	broker_address = config['DEFAULT']['cloudmqtt_addr']
 
 	mqttc.username_pw_set(user, password=password)
 	mqttc.connect(broker_address, port=port)
 	mqttc.subscribe("test_device/readingsTest")
 	mqttc.loop_forever()
-
+	print(config['DEFAULT']['cloudmqtt_user'])
