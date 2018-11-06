@@ -9,10 +9,10 @@ do
         echo "Connected to Internet. Starting Python script!";
         sleep 1;
 
-        tmux new-session -s "smartmeter2" -n script -d
-        tmux send-keys -t "smartmeter2" "python3 /home/calplug/smartmeter/serverMqttR.py" C-m 
+        tmux new-session -s "ravensession" -n script -d
+        tmux send-keys -t "ravensession" "python3 run.py" C-m 
 
-        echo "Successfully started Python script under tmux session 'smartmeter2'";
+        echo "Successfully started Python script under tmux session 'ravensession'";
         break
     else 
         echo "Not connected to the internet. Retrying in 5 seconds...";

@@ -1,11 +1,6 @@
 # python-raven Recorder
 
-## Raven Script
-Run
-```
-./ravenscript.sh
-```
-on cpmqtt1 (/home/calplug) to check for internet and to start severMqttR.py in a tmux session named "smartmeter2"
+
 
 ## serverMqtt.py
 
