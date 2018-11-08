@@ -124,9 +124,9 @@ if __name__ == '__main__':
 	if (len(sys.argv) > 1):
 		if sys.argv[1] == '-usemac':
 			RUN_NAME = str(hex(uuid.getnode()))
-			print(RUN_NAME)
 		elif sys.argv[1] == '-username':
 			RUN_NAME = sys.argv[2] # Title of run via cli (-username UserNameHere)
+		print('Starting run as: ' + RUN_NAME)
 	else:
 		RUN_NAME = input('What would you like to title this run? ')
 		input('Press enter to begin run.')
