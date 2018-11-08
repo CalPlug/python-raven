@@ -121,9 +121,11 @@ def on_message(client, userdata, msg):
 
 
 if __name__ == '__main__':
-
-	RUN_NAME = input('What would you like to title this run? ')
-	input('Press enter to begin run.')
+	if (len(sys.argv) > 1):
+		RUN_NAME = sys.argv[1] # Title of run via cli
+	else:
+		RUN_NAME = input('What would you like to title this run? ')
+		input('Press enter to begin run.')
 	for i in range(3,0,-1):
 		print('{}...'.format(i))
 		time.sleep(1)

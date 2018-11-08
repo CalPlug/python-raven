@@ -10,6 +10,7 @@ do
         sleep 1;
 
         tmux new-session -s "ravensession" -n script -d
+        tmux send-keys -t "ravensession" "cd ~/python-raven/reporter" C-m 
         tmux send-keys -t "ravensession" "python3 direct_mqtt_run.py" C-m 
 
         echo "Successfully started Python script under tmux session 'ravensession'";
