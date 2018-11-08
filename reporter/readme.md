@@ -6,4 +6,4 @@ Run
 ```
 ./ravenscript.sh
 ```
-to check for internet and to start run.py in a tmux session named "ravensession"
+to check for internet and to start direct_mqtt_run.py in a tmux session named "ravensession"
