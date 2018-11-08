@@ -1,6 +1,6 @@
 ## Raven Script
 
-Edit the path to run.py in ravenscript.sh:13.
+Edit the path to direct_mqtt_run.py and the run title name in ravenscript.sh:14.
 
 Run
 ```
