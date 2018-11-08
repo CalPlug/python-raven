@@ -122,9 +122,10 @@ def on_message(client, userdata, msg):
 
 if __name__ == '__main__':
 	if (len(sys.argv) > 1):
-		if sys.argv == '-usemac':
+		if sys.argv[1] == '-usemac':
 			RUN_NAME = str(hex(uuid.getnode()))
-		elif sys.argv == '-username':
+			print(RUN_NAME)
+		elif sys.argv[1] == '-username':
 			RUN_NAME = sys.argv[2] # Title of run via cli (-username UserNameHere)
 	else:
 		RUN_NAME = input('What would you like to title this run? ')
