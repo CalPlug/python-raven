@@ -1,9 +1,20 @@
 ## Raven Script
 
-Edit the path to direct_mqtt_run.py and the run title name in ravenscript.sh:14.
+### Run on startup
 
-Run
+In order to start direct_mqtt_run.py on startup, follow these steps:
+
+1. Copy ravenscript.sh to `/etc/init.d`.
+2. Edit `/etc/rc.local` to add:
+```bash
+sudo /etc/init.d/ravenscript.sh >> /home/pi/ravenstartuplog.txt &
 ```
-./ravenscript.sh
+3. Save and reboot. `sudo reboot`
+
+Upon reboot, verify that ravenscript.sh is running using
+```bash
+sudo tmux ls
 ```
-to check for internet and to start direct_mqtt_run.py in a tmux session named "ravensession"
+A session named `ravensession` should appear once internet connectivity is available.
+
+`/home/pi/ravenstartuplog.txt` contains the output from ravenscript.sh.

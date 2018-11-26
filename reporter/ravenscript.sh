@@ -10,10 +10,10 @@ do
         sleep 1;
 
         tmux new-session -s "ravensession" -n script -d
-        tmux send-keys -t "ravensession" "cd ~/python-raven/reporter" C-m 
+        tmux send-keys -t "ravensession" "cd /home/pi/python-raven/reporter" C-m 
         tmux send-keys -t "ravensession" "python3 direct_mqtt_run.py -usemac" C-m 
 
-        echo "Successfully started Python script under tmux session 'ravensession'";
+        echo "Successfully started Python script under sudo tmux session 'ravensession'";
         break
     else 
         echo "Not connected to the internet. Retrying in 5 seconds...";

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #import threading
 import sys
 import time
@@ -121,6 +122,9 @@ def on_message(client, userdata, msg):
 
 
 if __name__ == '__main__':
+	f = open('/home/pi/startlog.txt', 'w+')
+	f.write('Started at ' + str(datetime.datetime.now()))
+	f.close()
 	if (len(sys.argv) > 1):
 		if sys.argv[1] == '-usemac':
 			RUN_NAME = str(hex(uuid.getnode()))
