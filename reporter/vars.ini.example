@@ -1,0 +1,6 @@
+[DEFAULT]
+cloudmqtt_user = abcdefg
+cloudmqtt_pass = AbCd19201
+cloudmqtt_port = 17934
+cloudmqtt_addr = xxx.cloudmqtt.com
+

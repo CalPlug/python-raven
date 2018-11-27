@@ -1,5 +1,16 @@
 ## Raven Script
 
+## Pointing to the correct MQTT broker
+
+Create a file named `vars.ini` in the same directory as direct_mqtt_run.py. Insert the correct MQTT values following the example from vars.ini.example:
+```ini
+[DEFAULT]
+cloudmqtt_user = abcdefg
+cloudmqtt_pass = AbCd19201
+cloudmqtt_port = 17934
+cloudmqtt_addr = xxx.cloudmqtt.com
+```
+
 ### Run on startup
 
 In order to start direct_mqtt_run.py on startup, follow these steps:

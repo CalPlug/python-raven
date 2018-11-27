@@ -69,7 +69,7 @@ if __name__ =='__main__':
 
 	user = config['DEFAULT']['cloudmqtt_user']
 	password = config['DEFAULT']['cloudmqtt_pass']
-	port = config['DEFAULT']['cloudmqtt_port']
+	port = int(config['DEFAULT']['cloudmqtt_port'])
 	broker_address = config['DEFAULT']['cloudmqtt_addr']
 
 	mqttc.username_pw_set(user, password=password)

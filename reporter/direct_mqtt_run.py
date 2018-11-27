@@ -6,6 +6,10 @@ import uuid
 import datetime 
 import paho.mqtt.client as mqtt
 from Raven import Raven
+import configparser
+
+config = configparser.ConfigParser()
+config.read('vars.ini')
 
 
 SECOND = 1
@@ -31,17 +35,16 @@ class DataDaemon:
 		self.__mqttc.on_message = on_message
 		self.__mqttc.on_connect = on_connect
 
-		user='dkpljrty'
-		password = 'ZJDsxMVKRjoR'
-		port = 17934
-		broker_address = 'm10.cloudmqtt.com'
+		user = config['DEFAULT']['cloudmqtt_user']
+		password = config['DEFAULT']['cloudmqtt_pass']
+		port = int(config['DEFAULT']['cloudmqtt_port'])
+		broker_address = config['DEFAULT']['cloudmqtt_addr']
 
 		self.__mqttc.username_pw_set(user, password=password)
 		self.__mqttc.connect(broker_address, port=port)
 		self.__mqttc.loop_start()
 	
 	def run(self):
-		
 		self._begin()
 		summation_data = []
 		prev_xml_tag = ''
