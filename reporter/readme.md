@@ -1,4 +1,4 @@
-## Raven Script
+# Raven Script
 
 ## Pointing to the correct MQTT broker
 
@@ -11,7 +11,7 @@ cloudmqtt_port = 17934
 cloudmqtt_addr = xxx.cloudmqtt.com
 ```
 
-### Run on startup
+## Run on startup
 
 In order to start direct_mqtt_run.py on startup, follow these steps:
 
