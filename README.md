@@ -87,3 +87,17 @@ Note: This script posts instantaneous demand, current summation delivered and cu
 8) On a successful connection to the MQTT broker, the terminal will display "Connected with result 0"
 9) Rows of data that are sent from the broker should begin displaying on the terminal.
 
+
+# Data Visualizer for Internal Usage (main.py data_retriever.py auto_box.py simple_visualizer_v2.py visualizer_internal_v2.py)
+
+Note: This Visualizer is only for interval usage. It may be polished later if necessary and be converted into an .exe or .app file for different OS.
+
+1) Open main.py
+2) Fill in the credentials for db and retrieved keys
+3) Run main.py
+4) Graph will be the first user in the db with auto-generated lower and upper bound for time interval
+6) Auto-Complete and Cascade-View for user search box
+7) Switch user by clicking Change User
+8) After changing time interval, click draw to get graph of the user in the time interval
+9) Reset to get defualt graph for the current user in the defualt time interval which bounded by min and max date of record
+
